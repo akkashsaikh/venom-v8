@@ -139,7 +139,7 @@ def start(message):
 @bot.message_handler(commands=['attack'])
 def attack(message):
     user_id = message.from_user.id
-    log_command(user_id, '/attack')
+    log_command(user_id, '/bgmi')
     if user_id not in AUTHORIZED_USERS:
         bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
         return
